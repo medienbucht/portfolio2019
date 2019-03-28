@@ -26,3 +26,12 @@ $input-shadow: none;*/
 @import "./node_modules/bulma/sass/base/minireset.sass";
 @import "./node_modules/bulma/sass/utilities/mixins.sass";
 @import "./node_modules/bulma/sass/grid/_all.sass";
+@import "typo";
+
+body{
+    font-family: 'konnect', Arial, sans-serif;
+}
+
+p{
+    font-size: 1rem;
+}

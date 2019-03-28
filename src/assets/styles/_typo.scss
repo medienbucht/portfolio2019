@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'konnect';
+    src: url('/fonts/konnect-regular-webfont.eot');
+    src: url('/fonts/konnect-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/konnect-regular-webfont.woff2') format('woff2'),
+         url('/fonts/konnect-regular-webfont.woff') format('woff'),
+         url('/fonts/konnect-regular-webfont.ttf') format('truetype'),
+         url('/fonts/konnect-regular-webfont.svg#konnectregular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'konnect';
+    src: url('/fonts/konnect-extrabold-webfont.eot');
+    src: url('/fonts/konnect-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/konnect-extrabold-webfont.woff2') format('woff2'),
+         url('/fonts/konnect-extrabold-webfont.woff') format('woff'),
+         url('/fonts/konnect-extrabold-webfont.ttf') format('truetype'),
+         url('/fonts/konnect-extrabold-webfont.svg#konnectextrabold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
