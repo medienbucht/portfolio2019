@@ -1,0 +1,7 @@
+/* scss code here */
+.autoprefixer-test {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
