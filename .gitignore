@@ -1,21 +1,3 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@medienbucht Sign out
-1
-0 0 medienbucht/webpack-starter-es6-scss-html
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-webpack-starter-es6-scss-html/.gitignore
-@medienbucht medienbucht Create .gitignore
-302c630 2 days ago
-62 lines (44 sloc)  914 Bytes
-    
 # Logs
 logs
 *.log
@@ -77,15 +59,5 @@ typings/
 
 # next.js build output
 .next
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+
+.DS_Store
