@@ -1,0 +1,19 @@
+.a-heading{
+    font-family: 'konnect', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 160%;
+}
+.a-heading_first{
+    @extend .a-heading;
+    @include fontSize(88);
+}
+
+.a-heading_second{
+    @extend .a-heading;
+    @include fontSize(48);
+}
+
+.a-heading_third{
+    @extend .a-heading;
+    @include fontSize(32);
+}

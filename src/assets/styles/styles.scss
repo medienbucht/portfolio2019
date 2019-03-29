@@ -22,16 +22,21 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;*/
 
+html {
+    //font-size: 62.5%; /* Sets up the Base 10 stuff */
+}
+
 // Import only what you need from Bulma
 @import "./node_modules/bulma/sass/base/minireset.sass";
 @import "./node_modules/bulma/sass/utilities/mixins.sass";
 @import "./node_modules/bulma/sass/grid/_all.sass";
 @import "typo";
+@import "mixins/font-size";
 
-body{
-    font-family: 'konnect', Arial, sans-serif;
-}
+//atoms
+@import "atoms/a-paragraph";
+@import "atoms/a-heading";
+//molecules
+//organisms
 
-p{
-    font-size: 1rem;
-}
+

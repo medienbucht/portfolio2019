@@ -1,0 +1,12 @@
+p{
+    &.a-paragraph{
+        font-family: 'konnect', Arial, sans-serif;
+        @include fontSize(16);
+        line-height: 160%;
+        font-weight: 300;
+    }
+    &.a-paragraph_right{
+        @extend .a-paragraph;
+        text-align: right;
+    }
+}
