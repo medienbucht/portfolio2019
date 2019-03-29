@@ -1,14 +1,16 @@
 @charset "utf-8";
 
 // Set your brand colors
-/*$purple: #8A4D76;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;*/
+$mb-black: #0f0f0f;
+$mb-grey:#4A4A4A;
+$mb-red: #FF6663;
+$mb-blue: #DAEFF4;
+$mb-green: #D2F898;
+$mb-yellow: #FFF9A5;
 
 // Update Bulma's global variables
 /*$family-sans-serif: "Nunito", sans-serif;
+
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
@@ -36,7 +38,10 @@ html {
 //atoms
 @import "atoms/a-paragraph";
 @import "atoms/a-heading";
+@import "atoms/a-link";
+
 //molecules
+@import "molecules/m-stickynav";
 //organisms
 
 

@@ -1,0 +1,12 @@
+.a-link{
+    font-family: 'konnect', Arial, sans-serif;
+    @include fontSize(16);
+    line-height: 160%;
+    font-weight: 300;
+    color: $mb-red;
+    text-decoration: none;
+    &:hover{
+        color: $mb-black;
+        text-decoration: underline;
+    }
+}

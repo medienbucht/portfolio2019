@@ -1,0 +1,18 @@
+.m-stickynav{
+    @extend .column;
+    @extend .is-one-third;
+
+    .a-logo{
+        display: block;
+        margin-bottom:2rem;
+        img{
+
+        }
+    }
+    .a-link{
+        display: block;
+        color: $mb-black;
+        line-height: 100%;
+        margin-bottom:1rem;
+    }
+}
