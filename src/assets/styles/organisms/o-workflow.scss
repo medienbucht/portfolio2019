@@ -1,0 +1,41 @@
+.o-workflow{
+    margin-bottom: 10rem;
+    &__container{
+        @extend .container;
+    }
+    &__content{
+        @extend .column;
+        @extend .is-two-thirds;
+        @extend .is-offset-one-third;
+        
+    }
+    &__entry{
+        margin-bottom:-6rem!important;
+        background: linear-gradient(90deg, $mb-red 1px, white 1px);
+        background-position: 100% 0;
+        background-repeat: repeat-y;
+        background-size: 50%;
+        &:last-child{
+            margin-bottom:1rem!important;
+        }
+    }
+    &__entry:nth-child(odd){
+        @extend .columns;
+        text-align: right;
+        .o-workflow__entrycontent{
+            padding-right:2rem;
+        }
+    }
+    &__entry:nth-child(even){
+        @extend .columns;
+        .o-workflow__entrycontent{
+            @extend .is-offset-half;
+            padding-left: 2rem;
+            
+        }
+    }
+    &__entrycontent{
+        @extend .column;
+        @extend .is-half;
+    }
+}

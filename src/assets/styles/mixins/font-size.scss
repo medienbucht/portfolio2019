@@ -4,6 +4,6 @@
   }
 
   @mixin fontSize($size) {
-    font-size: $size; //Fallback in px
+    font-size: $size+px; //Fallback in px
     font-size: calculateRem($size);
   }

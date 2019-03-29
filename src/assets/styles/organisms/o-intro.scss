@@ -1,0 +1,23 @@
+.o-intro{
+    height:100vh;
+    margin-bottom: 10rem;
+    .a-heading_first{
+        @extend .column;
+        @extend .is-four-fifths;
+    }
+    &__container{
+        @extend .container;
+    }
+    &__content{
+        @extend .columns;
+    }
+    &__backgroundimage{
+        position: absolute;
+        width:50%;
+        right:0;
+        top:0;
+        background-image: url(../img/intro.jpg);
+        background-size: cover;
+        height:100vh;
+    }
+}

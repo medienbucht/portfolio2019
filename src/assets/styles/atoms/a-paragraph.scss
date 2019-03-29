@@ -5,6 +5,7 @@ p{
         line-height: 160%;
         font-weight: 300;
         color: $mb-black;
+        margin-bottom: 1.5rem;
     }
     &.a-paragraph_right{
         @extend .a-paragraph;

@@ -1,7 +1,11 @@
 .m-stickynav{
-    @extend .column;
-    @extend .is-one-third;
-
+    &__container{
+        @extend .container;
+    }
+    &__content{
+        @extend .column;
+        @extend .is-one-third;
+    }
     .a-logo{
         display: block;
         margin-bottom:2rem;
@@ -10,6 +14,11 @@
         display: block;
         color: $mb-black;
         line-height: 100%;
-        margin-bottom:1rem;
+        margin-bottom:0.75rem;
     }
+}
+nav{
+    bottom: 2rem;
+    position:fixed;
+    width:100%;
 }

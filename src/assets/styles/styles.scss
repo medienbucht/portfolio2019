@@ -32,6 +32,7 @@ html {
 @import "./node_modules/bulma/sass/base/minireset.sass";
 @import "./node_modules/bulma/sass/utilities/mixins.sass";
 @import "./node_modules/bulma/sass/grid/_all.sass";
+@import "./node_modules/bulma/sass/elements/container.sass";
 @import "typo";
 @import "mixins/font-size";
 
@@ -39,10 +40,13 @@ html {
 @import "atoms/a-paragraph";
 @import "atoms/a-heading";
 @import "atoms/a-link";
+@import "atoms/a-seperator";
 
 //molecules
 @import "molecules/m-stickynav";
 
 //organisms
-
+@import "organisms/o-intro";
+@import "organisms/o-introducing";
+@import "organisms/o-workflow";
 
