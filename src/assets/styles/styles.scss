@@ -41,12 +41,15 @@ html {
 @import "atoms/a-heading";
 @import "atoms/a-link";
 @import "atoms/a-seperator";
+@import "atoms/a-projectimage";
 
 //molecules
 @import "molecules/m-stickynav";
+@import "molecules/m-projectentry";
 
 //organisms
 @import "organisms/o-intro";
 @import "organisms/o-introducing";
 @import "organisms/o-workflow";
+@import "organisms/o-projects";
 

@@ -1,0 +1,12 @@
+.a-projectimage{
+    &_half{
+        width:50%;
+        padding: .5em;
+        align-self: flex-start;
+    }
+    &_full{
+        width:100%;
+        padding: .5em;
+        align-self: flex-start;
+    }
+}

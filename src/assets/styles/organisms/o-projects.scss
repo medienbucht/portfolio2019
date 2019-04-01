@@ -1,0 +1,13 @@
+.o-projects{
+    width: 100vw;
+    background: linear-gradient( $mb-yellow , $mb-green);
+    transform: skewY(3deg);
+    &__container{
+        @extend .container;
+        transform: skewY(-3deg);
+    }
+    &__content{
+        @extend .columns;
+        flex-wrap: wrap;
+    }
+}

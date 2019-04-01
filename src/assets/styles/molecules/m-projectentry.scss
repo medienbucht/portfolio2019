@@ -1,0 +1,31 @@
+.m-projectentry{
+    @extend .column;
+    @extend .is-two-thirds;
+    @extend .is-offset-one-third;
+    padding: 3em 0;
+    border-bottom: 2px solid #fff;
+    &:first-child{
+        padding-top: 6em;
+    }
+    &:last-child{
+        border-bottom: 0px solid transparent;
+        padding-bottom: 6em;
+    }
+    &__content{
+        @extend .columns;
+    }
+    &__descr{
+        @extend .column;
+        @extend .is-half;
+    }
+    &__images{
+        @extend .column;
+        @extend .is-half;
+        display:flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .a-paragraph{
+        margin-bottom:0;
+    }
+}
