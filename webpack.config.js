@@ -1,7 +1,14 @@
+const path = require('path');
+const glob = require('glob');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const PurgecssPlugin = require('purgecss-webpack-plugin');
 const autoprefixer = require("autoprefixer");
 const webpack = require("webpack");
+
+const PATHS = {
+  src: path.join(__dirname, 'src')
+}
 
 module.exports = {
   module: {
@@ -49,6 +56,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
+    }),
+    new PurgecssPlugin({
+      paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
     }),
     new webpack.LoaderOptionsPlugin({
         options: {
