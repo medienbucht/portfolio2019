@@ -6,15 +6,15 @@
         @extend .column;
         @extend .is-one-third;
     }
-    .a-logo{
-        display: block;
-        margin-bottom:2rem;
-    }
     .a-link{
         display: block;
         color: $mb-black;
         line-height: 100%;
         margin-bottom:0.75rem;
+        
+        @media screen and (max-height:680px) {
+            margin-bottom:0.25rem;
+        }
     }
 }
 nav{

@@ -1,0 +1,8 @@
+.o-contact{
+    &__container{
+        @extend .container;
+    }
+    &__content{
+        @extend .columns;
+    }
+}

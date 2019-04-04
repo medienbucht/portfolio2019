@@ -1,0 +1,10 @@
+.m-contactform{
+    @extend .column;
+    @extend .is-one-third;
+    @extend .is-offset-one-third;
+    form{
+        label{
+    
+        }
+    }
+}

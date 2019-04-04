@@ -3,7 +3,10 @@
     margin-bottom: 10rem;
     .a-heading_first{
         @extend .column;
-        @extend .is-four-fifths;
+        margin-top: 2rem;
+        /*@extend .is-four-fifths;
+        @extend .is-offset-one-fifth;*/
+        //text-align: right;
     }
     &__container{
         @extend .container;
