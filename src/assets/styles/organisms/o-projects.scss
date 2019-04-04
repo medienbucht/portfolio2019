@@ -1,10 +1,10 @@
 .o-projects{
     width: 100vw;
     background: linear-gradient( $mb-yellow , $mb-green);
-    transform: skewY(3deg);
+    transform: skewY(-8deg);
     &__container{
         @extend .container;
-        transform: skewY(-3deg);
+        transform: skewY(8deg);
     }
     &__content{
         @extend .columns;

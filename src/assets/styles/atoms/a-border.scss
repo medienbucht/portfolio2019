@@ -1,0 +1,11 @@
+.a-border{
+    
+    &_thick{
+        width:1px;
+        height:100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-left: 1rem solid $mb-red; 
+    }
+}

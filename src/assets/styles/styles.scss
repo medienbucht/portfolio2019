@@ -15,9 +15,11 @@ html {
 
 // Import only what you need from Bulma
 @import "./node_modules/bulma/sass/base/minireset.sass";
-@import "./node_modules/bulma/sass/utilities/mixins.sass";
+@import "./node_modules/bulma/sass/utilities/_all.sass";
 @import "./node_modules/bulma/sass/grid/_all.sass";
 @import "./node_modules/bulma/sass/elements/container.sass";
+@import "./node_modules/bulma/sass/elements/form.sass";
+@import "./node_modules/bulma/sass/elements/button.sass";
 @import "typo";
 @import "mixins/font-size";
 
@@ -28,6 +30,8 @@ html {
 @import "atoms/a-seperator";
 @import "atoms/a-projectimage";
 @import "atoms/a-logo";
+@import "atoms/a-border";
+@import "atoms/a-input";
 
 //molecules
 @import "molecules/m-stickynav";

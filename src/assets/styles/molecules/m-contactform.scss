@@ -1,10 +1,18 @@
 .m-contactform{
     @extend .column;
-    @extend .is-one-third;
+    @extend .is-6;
     @extend .is-offset-one-third;
-    form{
-        label{
+    z-index: 2000;
     
+    form{
+        
+        label{
+            font-size:.8rem;
+            padding-left: 5px;
+            border-left: 2px solid $mb-red;     
+        }
+        label[for=consent]{
+            border-left: 0 solid $mb-red;
         }
     }
 }
