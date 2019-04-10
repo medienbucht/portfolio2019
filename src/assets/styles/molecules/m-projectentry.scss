@@ -3,7 +3,7 @@
     @extend .is-two-thirds;
     @extend .is-offset-one-third;
     padding: 3em 0;
-    border-bottom: 2px solid #fff;
+    //border-bottom: 2px solid #fff;
     &:first-child{
         padding-top: 6em;
     }
@@ -17,6 +17,7 @@
     &__descr{
         @extend .column;
         @extend .is-half;
+        padding-left: 1.5rem;
     }
     &__images{
         @extend .column;

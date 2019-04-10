@@ -1,57 +1,42 @@
 .o-workflow{
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
     &__container{
         @extend .container;
     }
     &__content{
         @extend .column;
         @extend .is-two-thirds;
-        @extend .is-offset-one-third;
-        
+        @extend .is-offset-one-third;   
     }
     &__entry{
-        margin-bottom:-6rem!important;
-        background: linear-gradient(90deg, $mb-red 1px, white 1px);
+        margin-bottom:-8rem!important;
+        background: linear-gradient(90deg, $mb-grey 1px, white 1px);
         background-position: 100% 0;
         background-repeat: repeat-y;
         background-size: 50%;
         &:last-child{
             margin-bottom:1rem!important;
         }
-        &:nth-child(1){
-            .a-paragraph{
-                display: inline;
-                //background: $mb-blue;
-                border-bottom: 2px solid $mb-blue;
-            }
-        }/*
-        &:nth-child(2){
-            .a-paragraph{
-                display: inline;
-                //background: #daeff457;
-                border-bottom: 2px solid $mb-yellow;
-            }
+        .a-heading_third{
+            background: $mb-blue;
+            border-right: 5px solid $mb-blue;
+            border-left: 5px solid $mb-blue;
+            display: inline-block;
         }
-        &:nth-child(3){
-            .a-paragraph{
-                display: inline;
-                //background: #daeff457;
-                border-bottom: 2px solid $mb-green;
-            }
+        .a-paragraph{
+            font-size: .9rem;
         }
-        &:nth-child(4){
-            .a-paragraph{
-                display: inline;
-                //background: #daeff457;
-                border-bottom: 2px solid $mb-grey;
-            }
-        }*/
+        
     }
+
     &__entry:nth-child(odd){
         @extend .columns;
         text-align: right;
         .o-workflow__entrycontent{
             padding-right:2rem;
+        }
+        .a-paragraph{
+            
         }
     }
     &__entry:nth-child(even){
@@ -59,6 +44,8 @@
         .o-workflow__entrycontent{
             @extend .is-offset-half;
             padding-left: 2rem;
+        }
+        .a-paragraph{
             
         }
     }

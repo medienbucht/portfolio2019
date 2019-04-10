@@ -1,0 +1,29 @@
+.o-footer{
+    width: 100vw;
+    //background: linear-gradient( $mb-yellow , $mb-green);
+    background-color: $mb-blue;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    transform: skewY(3deg);
+    z-index: 2000;
+    &__container{
+        @extend .container;
+        transform: skewY(-3deg);
+    }
+    &__content{
+        @extend .column;
+        @extend .is-two-thirds;
+        @extend .is-offset-one-third;
+        
+    }
+    &:after{
+        content:" ";
+        width:100vw;
+        height:200px;
+        background-color:$mb-red;
+        position: absolute;
+        margin-top: 0;
+        margin-bottom: -50px;
+        transform: skewY(-3deg);
+    }
+}

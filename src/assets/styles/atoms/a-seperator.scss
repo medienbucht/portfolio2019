@@ -8,14 +8,22 @@
             margin-right:-2rem;
             border-bottom: 1px $mb-red solid;
             margin-bottom: 1rem;
-            border-image-source: linear-gradient(90deg, #fff 90%, $mb-red 91%);
+            border-image-source: linear-gradient(90deg, #fff 90%, $mb-grey 91%);
             border-image-slice: 1;
         }
         &_left{
             margin-left:-2rem;
             border-bottom: 1px $mb-red solid;
             margin-bottom: 1rem;
-            border-image-source: linear-gradient(-90deg, #fff 90%, $mb-red 91%);
+            border-image-source: linear-gradient(-90deg, #fff 90%, $mb-grey 91%);
             border-image-slice: 1;
+        }
+        &_negative{
+            width: 6rem;
+            border-style:solid;
+            border-color:transparent;
+            border-bottom: 0.25rem #fff solid;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
 }

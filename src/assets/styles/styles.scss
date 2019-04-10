@@ -32,12 +32,15 @@ html {
 @import "atoms/a-logo";
 @import "atoms/a-border";
 @import "atoms/a-input";
+@import "atoms/a-clientimage";
+@import "atoms/a-clientlink";
 
 //molecules
 @import "molecules/m-stickynav";
 @import "molecules/m-projectentry";
 @import "molecules/m-contactform";
 @import "molecules/m-partners";
+@import "molecules/m-client";
 
 //organisms
 @import "organisms/o-intro";
@@ -45,4 +48,5 @@ html {
 @import "organisms/o-workflow";
 @import "organisms/o-projects";
 @import "organisms/o-contact";
+@import "organisms/o-footer";
 

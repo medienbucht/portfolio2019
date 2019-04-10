@@ -1,0 +1,11 @@
+.a-clientlink{
+    display: block;
+    &:hover{
+        
+    }
+    &:hover>img{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all,.35s, easein;
+    }
+}
