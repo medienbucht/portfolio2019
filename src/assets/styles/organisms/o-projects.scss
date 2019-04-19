@@ -1,6 +1,6 @@
 .o-projects{
     width: 100vw;
-    background: linear-gradient( $mb-yellow , $mb-green);
+    background: linear-gradient(to right, $mb-yellow , $mb-green);
     transform: skewY(-6deg);
     &__container{
         @extend .container;

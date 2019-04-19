@@ -9,49 +9,109 @@
         @extend .is-offset-one-third;   
     }
     &__entry{
-        margin-bottom:-8rem!important;
-        background: linear-gradient(90deg, $mb-grey 1px, white 1px);
-        background-position: 100% 0;
-        background-repeat: repeat-y;
-        background-size: 50%;
+        @extend .column;        
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        &:nth-child(even){
+            .o-workflow__entrycontent{
+                .o-workflow__heading{
+                    order:2;
+                    text-align: left;
+                    .a-heading_third{
+                        position: relative;
+                        &:after{
+                            content: "◀";
+                            font-size: 1rem;
+                            position: absolute;
+                            margin-top: 4rem;
+                            background: linear-gradient(to right,transparent 2%, $mb-green 3%); 
+                            left: 0;
+                            line-height: 2px;
+                            width: 100%;
+                            height: 1px;
+                            color: $mb-green;
+                        }
+                    }
+                    
+                }
+                .o-workflow__paragraph{
+                    order:1;
+                    text-align: right;
+                    .a-seperator{
+                        margin-top: 1.5rem;
+                        float:right;
+                    }
+                }
+            }
+        }
+
         &:last-child{
             margin-bottom:1rem!important;
+
         }
-        .a-heading_third{
-            background: $mb-blue;
-            border-right: 5px solid $mb-blue;
-            border-left: 5px solid $mb-blue;
-            display: inline-block;
-        }
-        .a-paragraph{
-            font-size: .9rem;
-        }
-        
+        /*&:nth-child(1){
+            .o-workflow__heading{
+                background-size: cover;
+                padding:0;
+                background-image:url(../img/bg3.png);
+            }*/
     }
 
-    &__entry:nth-child(odd){
-        @extend .columns;
-        text-align: right;
-        .o-workflow__entrycontent{
-            padding-right:2rem;
-        }
-        .a-paragraph{
-            
-        }
-    }
-    &__entry:nth-child(even){
-        @extend .columns;
-        .o-workflow__entrycontent{
-            @extend .is-offset-half;
-            padding-left: 2rem;
-        }
-        .a-paragraph{
-            
-        }
-    }
-    &__entrycontent{
+    &__heading{
         @extend .column;
-        @extend .is-half;
+        @extend .is-4;
+        text-align: right;
+        
+        .a-heading_third{  
+            height:6rem;
+            position: relative;
+            &:after{
+                content: "►";
+                font-size: 1rem;
+                position: absolute;
+                margin-top: 4rem;
+                right: 0;
+                background: linear-gradient(to left,transparent 2%, $mb-green 3%); 
+                line-height: 2px;
+                width: 100%;
+                height: 1px;
+                color: $mb-green;
+            }
+            //background-image: linear-gradient(to top,$mb-blue 64%,#ffffff 65%,#ffffff 100%);
+
+            
+        }
+        div{
+            //background-color: $mb-blue;
+            //background-image: url(https://cdn.pixabay.com/photo/2017/06/15/23/47/painting-2407262_960_720.jpg);
+            //background-position: center;
+            //border: 2px solid #aaa;
+            border-radius: 50%;
+            img{
+                
+                mix-blend-mode: multiply;
+            }
+        }
+    }
+    &__paragraph{
+        @extend .column;
+        @extend .is-7;
+        margin-top: 3.2rem;
+        .a-paragraph{ 
+        }
+        .a-seperator{
+            float: left;
+            margin-top: 1.5rem;
+            width: 38%;
+            display: none;
+        }
+    }  
+
+    &__entrycontent{
+        @extend .columns;
     }
 
 }
+
+
+

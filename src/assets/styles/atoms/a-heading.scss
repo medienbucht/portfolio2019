@@ -27,5 +27,5 @@
 
 .a-heading_third{
     @extend .a-heading;
-    @include fontSize(32);
+    @include fontSize(24);
 }

@@ -1,9 +1,13 @@
-/*.m-client{
-    &::after{
-        
-    &:last-child{
-        &::after{
-        
-        }
+.m-client{
+    @extend .column;
+    @extend .is-3;
+
+    //nur desktop
+    &:first-child{
+        margin-left: 12.5%;
     }
-}*/
+    &:nth-child(8){
+        margin-left: 12.5%;
+    }
+    
+}
