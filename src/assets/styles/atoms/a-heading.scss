@@ -15,14 +15,20 @@
 }
 
 .a-heading_projects{
-    @extend .a-heading_second;
-    @extend .column;
-    @extend .is-offset-one-third;
+    margin-right: 1rem;
+    @include fontSize(32);
+    @media (min-width:370px) {
+        @include fontSize(48);
+    }
     text-transform: uppercase;    
     margin-top: -100px;
     position: absolute;
     transform: rotate(-6deg);
     color: $mb-grey;
+    @extend .a-heading_second;
+    @extend .column;
+    @extend .is-offset-one-third;
+    
 }
 
 .a-heading_third{

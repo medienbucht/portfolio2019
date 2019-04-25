@@ -20,6 +20,7 @@ html {
 @import "./node_modules/bulma/sass/elements/container.sass";
 @import "./node_modules/bulma/sass/elements/form.sass";
 @import "./node_modules/bulma/sass/elements/button.sass";
+/*@import "./node_modules/bulma/bulma.sass";*/
 @import "typo";
 @import "mixins/font-size";
 
@@ -50,3 +51,7 @@ html {
 @import "organisms/o-contact";
 @import "organisms/o-footer";
 
+.columns{
+    margin-left: 0;
+    margin-right: 0; 
+}
