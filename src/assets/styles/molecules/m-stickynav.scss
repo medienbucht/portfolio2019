@@ -5,6 +5,7 @@
     &__content{
         @extend .column;
         @extend .is-one-third;
+        padding: 1.5rem;
     }
     .a-link{
         display: block;
@@ -18,8 +19,13 @@
     }
 }
 nav{
+
+    
     bottom: 2rem;
-    position:fixed;
+    position:absolute;
     width:100%;
     z-index: 1000;
+    @include tablet{
+        position:fixed;
+    }
 }

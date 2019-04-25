@@ -2,6 +2,16 @@
     height:100vh;
     margin-bottom: 10rem;
     .a-heading_first{
+        font-size: 2.3rem;      
+        @media (min-width: 375px) {
+            font-size: 2.8rem;
+        }
+        @media (min-width: 500px) {
+            font-size: 3.8rem;
+        }
+        @media (min-width: 700px) {
+            font-size: 5rem;
+        }
         @extend .column;
         margin-top: 2rem;
         /*@extend .is-four-fifths;
@@ -12,16 +22,19 @@
         @extend .container;
     }
     &__content{
-        @extend .columns;
+        @extend .column;
     }
     &__backgroundimage{
         position: absolute;
-        width:50%;
+        width: 100%;
         right:0;
         top:0;
         background-image: url(../img/intro.jpg);
         background-size: cover;
         height:100vh;
+        @include tablet{
+            width:50%;
+        }
     }
     span.linebreak{
         display: none;
