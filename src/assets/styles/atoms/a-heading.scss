@@ -11,7 +11,10 @@
 
 .a-heading_second{
     @extend .a-heading;
-    @include fontSize(48);
+    @include fontSize(32);
+    @include tablet{
+        @include fontSize(48);
+    }
 }
 
 .a-heading_projects{
@@ -28,10 +31,13 @@
     @extend .a-heading_second;
     @extend .column;
     @extend .is-offset-one-third;
-    
 }
 
 .a-heading_third{
     @extend .a-heading;
     @include fontSize(24);
+}
+
+.anim{
+    color:red;
 }

@@ -1,6 +1,10 @@
 .o-intro{
     height:100vh;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
+    @include tablet{
+        margin-bottom: 10rem;
+    }
+    
     .a-heading_first{
         font-size: 2.3rem;      
         @media (min-width: 375px) {
@@ -11,6 +15,9 @@
         }
         @media (min-width: 700px) {
             font-size: 5rem;
+        }
+        @include widescreen{
+            font-size: 7rem;
         }
         @extend .column;
         margin-top: 2rem;

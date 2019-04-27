@@ -9,7 +9,11 @@
         @extend .is-offset-one-third;   
     }
     &__entry{
-        @extend .column;        
+        @extend .column; 
+        padding:0;
+        @include tablet{
+            padding: .75rem;
+        }
         flex-wrap: wrap;
         margin-bottom: 2rem;
         &:nth-child(even){
@@ -19,18 +23,6 @@
                     text-align: left;
                     .a-heading_third{
                         position: relative;
-                        &:after{
-                            content: "◀";
-                            font-size: 1rem;
-                            position: absolute;
-                            margin-top: 4rem;
-                            background: linear-gradient(to right,transparent 2%, $mb-green 3%); 
-                            left: 0;
-                            line-height: 2px;
-                            width: 100%;
-                            height: 1px;
-                            color: $mb-green;
-                        }
                     }
                     
                 }
@@ -49,43 +41,23 @@
             margin-bottom:1rem!important;
 
         }
-        /*&:nth-child(1){
-            .o-workflow__heading{
-                background-size: cover;
-                padding:0;
-                background-image:url(../img/bg3.png);
-            }*/
     }
 
     &__heading{
+        @media (min-width:400px) and (max-width:768px){
+            width:33%;
+        }
         @extend .column;
         @extend .is-4;
+        @extend .is-one-quarter-fullhd;
         text-align: right;
         
         .a-heading_third{  
-            height:6rem;
+            height:3rem;
             position: relative;
-            &:after{
-                content: "►";
-                font-size: 1rem;
-                position: absolute;
-                margin-top: 4rem;
-                right: 0;
-                background: linear-gradient(to left,transparent 2%, $mb-green 3%); 
-                line-height: 2px;
-                width: 100%;
-                height: 1px;
-                color: $mb-green;
-            }
-            //background-image: linear-gradient(to top,$mb-blue 64%,#ffffff 65%,#ffffff 100%);
-
             
         }
         div{
-            //background-color: $mb-blue;
-            //background-image: url(https://cdn.pixabay.com/photo/2017/06/15/23/47/painting-2407262_960_720.jpg);
-            //background-position: center;
-            //border: 2px solid #aaa;
             border-radius: 50%;
             img{
                 
@@ -94,9 +66,17 @@
         }
     }
     &__paragraph{
+        
+        @media (min-width:400px) and (max-width:768px){
+            width: 58.33333%;
+        }
         @extend .column;
         @extend .is-7;
-        margin-top: 3.2rem;
+        @extend .is-three-quarters-fullhd;
+        
+        @include desktop{
+            margin-top: 2.75rem;
+        }
         .a-paragraph{ 
         }
         .a-seperator{
@@ -108,7 +88,10 @@
     }  
 
     &__entrycontent{
-        @extend .columns;
+        @media (min-width: 400px){
+            display: flex;
+        }
+        @extend .columns;        
     }
 
 }

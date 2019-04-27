@@ -1,5 +1,9 @@
 .o-introducing{
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    @include tablet{
+        margin-bottom: 5rem;
+    }
+    
     &__container{
         @extend .container;
     }
@@ -9,7 +13,9 @@
         @extend .is-offset-one-third;
     }
     .a-heading_second{
-        line-height: calculateRem(60);
-        margin-bottom:5rem;
+        margin-bottom:3.5rem;
+        @include tablet{
+            margin-bottom: 5rem;
+        }
     }
 }

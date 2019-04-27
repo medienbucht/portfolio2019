@@ -12,6 +12,7 @@ html {
     //font-size: 62.5%; /* Sets up the Base 10 stuff */
 }
 
+$tablet: 768px;
 
 // Import only what you need from Bulma
 @import "./node_modules/bulma/sass/base/minireset.sass";
@@ -55,3 +56,4 @@ html {
     margin-left: 0;
     margin-right: 0; 
 }
+
