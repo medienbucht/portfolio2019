@@ -11,6 +11,10 @@
         @extend .column;
         @extend .is-two-thirds;
         @extend .is-offset-one-third;
+        @include touch{
+            padding-left:1.5rem;
+            padding-right: 1.5rem;
+        }
     }
     .a-heading_second{
         margin-bottom:3.5rem;

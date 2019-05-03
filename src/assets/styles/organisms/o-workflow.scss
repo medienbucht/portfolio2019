@@ -28,6 +28,7 @@
                 }
                 .o-workflow__paragraph{
                     order:1;
+                    
                     text-align: right;
                     .a-seperator{
                         margin-top: 1.5rem;
@@ -50,7 +51,11 @@
         @extend .column;
         @extend .is-4;
         @extend .is-one-quarter-fullhd;
+        @media (max-width:399px){
+            text-align:left;
+        }
         text-align: right;
+        
         
         .a-heading_third{  
             height:3rem;
@@ -58,10 +63,17 @@
             
         }
         div{
-            border-radius: 50%;
+            @media (max-width:399px){
+                height:100px;
+                overflow: hidden;
+            }
             img{
-                
-                mix-blend-mode: multiply;
+                @media (max-width:399px){
+                    margin-top:-20%;
+                }
+                @media (min-width:600px) and (max-width:767px){
+                    width:50%;
+                }
             }
         }
     }
@@ -88,6 +100,9 @@
     }  
 
     &__entrycontent{
+        @media (max-width:399px){
+            display:block;
+        }
         @media (min-width: 400px){
             display: flex;
         }

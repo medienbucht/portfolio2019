@@ -1,19 +1,29 @@
 .o-contact{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
     &__container{
         @extend .container;
     }
     &__content{
         @extend .columns;
+        
     }
     &__logos{
         @extend .column;
         @extend .is-two-thirds;
         @extend .is-offset-one-third; 
+        @include mobile{
+            margin-top:2rem;
+            margin-bottom:3rem;
+        }
+        @include tablet{
+            margin-top:3rem;
+            margin-bottom:5rem;
+        }
+        
     }
     &__logocontent{
+        margin: 3rem 0;
         @extend .columns;
+        @extend .is-mobile;
         flex-wrap: wrap;
     }
 }

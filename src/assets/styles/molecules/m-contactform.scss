@@ -1,15 +1,27 @@
 .m-contactform{
     @extend .column;
-    @extend .is-5;
+    @extend .is-6-desktop;
+    @extend .is-5-widescreen;
     @extend .is-offset-one-third;
+    @include touch{
+        padding-left:1.5rem;
+        padding-right: 1.5rem;
+        
+    }
+    margin-bottom: 5rem;
+    
     z-index: 2000;
+
+    .a-paragraph{
+       
+    }
     
     form{
         
         label{
             font-size:.8rem;
             padding-left: 5px;
-            border-left: 2px solid $mb-red;     
+            border-left: 2px solid $mb-red;    
         }
         label[for=consent]{
             border-left: 0 solid $mb-red;

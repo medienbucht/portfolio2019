@@ -11,4 +11,4 @@ const options = {
 
 const typed = new Typed("#typedjs", options);
 
-attachClassOnScroll('.a-heading_projects', 'anim');
+//attachClassOnScroll('.a-heading_projects', 'anim');

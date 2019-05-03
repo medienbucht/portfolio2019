@@ -4,26 +4,30 @@
     background-color: $mb-blue;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    transform: skewY(3deg);
-    z-index: 2000;
+    z-index: 1000;
+    position: relative;
     &__container{
         @extend .container;
-        transform: skewY(-3deg);
     }
     &__content{
         @extend .column;
         @extend .is-two-thirds;
         @extend .is-offset-one-third;
+        @include touch{
+            padding-left:1.5rem;
+            padding-right: 1.5rem;
+        }
         
     }
-    &:after{
-        content:" ";
-        width:100vw;
-        height:200px;
-        background-color:$mb-red;
+    &:before{
+        content: " ";
+        width: 100vw;
+        height: 200px;
+        background-color: $mb-blue;
         position: absolute;
-        margin-top: 0;
-        margin-bottom: -50px;
-        transform: skewY(-3deg);
+        transform-origin: top left;
+        transform: skewY(3deg);
+        top: -60px;
     }
+   
 }

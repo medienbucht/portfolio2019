@@ -6,6 +6,7 @@
         @extend .column;
         @extend .is-one-third;
         padding: 1.5rem;
+        pointer-events: all;
     }
     .a-link{
         display: block;
@@ -19,12 +20,11 @@
     }
 }
 nav{
-
-    
+    pointer-events:none;
     bottom: 2rem;
     position:absolute;
     width:100%;
-    z-index: 1000;
+    z-index: 10000;
     @include tablet{
         position:fixed;
     }

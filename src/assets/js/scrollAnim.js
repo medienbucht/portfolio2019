@@ -8,6 +8,7 @@ export default function attachClassOnScroll(element, className) {
             console.log('scrolled by')
         }
         else {
+            //remove class name on scroll by
             //elem.classList.remove(className);
         }
     })

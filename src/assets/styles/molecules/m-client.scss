@@ -1,13 +1,15 @@
 .m-client{
     @extend .column;
-    @extend .is-3;
+    @extend .is-3-mobile;
+    @extend .is-3-tablet;
 
-    //nur desktop
-    &:first-child{
-        margin-left: 12.5%;
-    }
-    &:nth-child(8){
-        margin-left: 12.5%;
+    @include tablet{
+        &:first-child{
+            margin-left: 12.5%;
+        }
+        &:nth-child(8){
+            margin-left: 12.5%;
+        }
     }
     
 }
