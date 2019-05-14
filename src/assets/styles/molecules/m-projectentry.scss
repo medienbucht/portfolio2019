@@ -4,6 +4,10 @@
     @extend .is-offset-one-third;
     padding: 3em 0;
     //border-bottom: 2px solid #fff;
+    @include tablet{
+        margin-bottom: 3rem;
+    }
+
     &:first-child{
         padding-top: 6em;
     }
@@ -18,13 +22,23 @@
         @extend .column;
         @extend .is-half;
         padding-left: 1.5rem;
+        .a-heading_third{
+            margin-bottom: 2rem;
+        }
     }
     &__images{
         @extend .column;
         @extend .is-half;
         display:flex;
         flex-wrap: wrap;
-        align-content: flex-start;
+        align-content: flex-end;
+        justify-content: center;
+        @include tablet{
+            padding-left: 2rem;
+        }
+        @include desktop{
+            padding-left: 4rem;
+        }
     }
     .a-paragraph{
         margin-bottom:0;

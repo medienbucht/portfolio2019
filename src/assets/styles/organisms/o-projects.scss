@@ -10,4 +10,11 @@
         @extend .columns;
         flex-wrap: wrap;
     }
+    #particles-js{
+        display: block;
+    }
+    .particles{
+        position: absolute;
+        
+    }
 }

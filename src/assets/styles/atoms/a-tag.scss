@@ -1,0 +1,14 @@
+.a-tag{
+    border: 1px solid $mb-black;
+    padding: 1px 7px;
+    transform: skewX(-5deg);
+    margin-right:4px;
+    margin-top:0.5rem;
+    span{
+        display: block;
+        @extend .a-paragraph;
+        @include fontSize(12);
+        //font-weight: 600;
+        transform: skewX(5deg);
+    }
+}

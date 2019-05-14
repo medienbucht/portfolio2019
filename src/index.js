@@ -1,4 +1,5 @@
 import './assets/js/o-intro';
+import './assets/js/o-projects';
 import './assets/styles/styles.scss';
 import axios from 'axios';
 
@@ -16,5 +17,6 @@ contactForm.addEventListener('submit', function (e){
         console.log(response.headers);
         console.log(response.config);
     })
-}
-)
+})
+
+

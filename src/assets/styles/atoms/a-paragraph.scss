@@ -1,5 +1,4 @@
-p{
-    &.a-paragraph{
+.a-paragraph{
         font-family: 'konnect', Arial, sans-serif;
         @include fontSize(16);
         line-height: 160%;
@@ -7,8 +6,12 @@ p{
         color: $mb-black;
         margin-bottom: 1.5rem;
     }
-    &.a-paragraph_right{
+.a-paragraph_right{
         @extend .a-paragraph;
         text-align: right;
-    }
+}
+
+em{
+        font-style: normal;
+        font-weight: 600;
 }

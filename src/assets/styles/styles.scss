@@ -21,7 +21,6 @@ $tablet: 768px;
 @import "./node_modules/bulma/sass/elements/container.sass";
 @import "./node_modules/bulma/sass/elements/form.sass";
 @import "./node_modules/bulma/sass/elements/button.sass";
-/*@import "./node_modules/bulma/bulma.sass";*/
 @import "typo";
 @import "mixins/font-size";
 
@@ -36,6 +35,7 @@ $tablet: 768px;
 @import "atoms/a-input";
 @import "atoms/a-clientimage";
 @import "atoms/a-clientlink";
+@import "atoms/a-tag";
 
 //molecules
 @import "molecules/m-stickynav";
@@ -43,6 +43,7 @@ $tablet: 768px;
 @import "molecules/m-contactform";
 @import "molecules/m-partners";
 @import "molecules/m-client";
+@import "molecules/m-taglist";
 
 //organisms
 @import "organisms/o-intro";

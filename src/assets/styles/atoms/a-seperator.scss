@@ -19,11 +19,12 @@
             border-image-slice: 1;
         }
         &_negative{
-            width: 6rem;
+            width: 100%;
             border-style:solid;
             border-color:transparent;
-            border-bottom: 0.25rem #fff solid;
-            margin-top: 2rem;
+            border-bottom: 1px solid $mb-black;
+            margin-top: 4rem;
             margin-bottom: 1rem;
+            //transform: skewY(-6deg);
         }
 }

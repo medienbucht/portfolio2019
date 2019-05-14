@@ -9,4 +9,14 @@
         color: $mb-black;
         text-decoration: underline;
     }
+    &:visited{
+        color: $mb-red;
+    }
+}
+
+.m-projectentry__images{
+    .a-link{ 
+        display: block;
+        margin-top: 1rem;
+    }
 }

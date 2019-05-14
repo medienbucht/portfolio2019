@@ -10,7 +10,6 @@ dt,
 dd,
 legend,
 textarea,
-pre,
 hr,
 h1,
 h2,
@@ -328,7 +327,6 @@ th {
     box-shadow: none;
     opacity: 0.5; }
 
-/*@import "./node_modules/bulma/bulma.sass";*/
 @font-face {
   font-family: 'konnect';
   src: url("/fonts/konnect-regular-webfont.eot");
@@ -343,7 +341,7 @@ th {
   font-weight: 700;
   font-style: normal; }
 
-p.a-paragraph {
+p.a-paragraph, p.a-tag {
   font-family: 'konnect', Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -420,11 +418,6 @@ p.a-paragraph {
 
 .a-projectimage_half {
   width: 50%;
-  padding: .5em;
-  align-self: flex-start; }
-
-.a-projectimage_full {
-  width: 100%;
   padding: .5em;
   align-self: flex-start; }
 
@@ -539,7 +532,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start; }
-  .m-projectentry .a-paragraph {
+  .m-projectentry .a-paragraph, .m-projectentry .a-tag {
     margin-bottom: 0; }
 
 .m-contactform {
@@ -578,6 +571,9 @@ nav {
     margin-left: 12.5%; }
   .m-client:nth-child(8) {
     margin-left: 12.5%; } }
+
+.m-taglist li {
+  display: inline; }
 
 .o-intro {
   height: 100vh;
@@ -618,6 +614,8 @@ nav {
     @media screen and (min-width: 768px), print {
       .o-intro span.linebreak {
         display: inline; } }
+  .o-intro #typedjs {
+    color: #84C1CF; }
 
 .o-introducing {
   margin-bottom: 2rem; }
@@ -705,6 +703,10 @@ nav {
             transform: skewY(6deg); }
   .o-projects__content {
     flex-wrap: wrap; }
+  .o-projects #particles-js {
+    display: block; }
+  .o-projects .particles {
+    position: absolute; }
 
 @media screen and (max-width: 767px) {
   .o-contact__logos {
