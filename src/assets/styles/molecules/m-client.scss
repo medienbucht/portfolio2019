@@ -1,6 +1,6 @@
 .m-client{
     @extend .column;
-    @extend .is-3-mobile;
+    @extend .is-6-mobile;
     @extend .is-3-tablet;
 
     @include tablet{

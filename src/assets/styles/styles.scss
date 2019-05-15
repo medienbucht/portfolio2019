@@ -52,7 +52,13 @@ $tablet: 768px;
 @import "organisms/o-projects";
 @import "organisms/o-contact";
 @import "organisms/o-footer";
+@import "organisms/o-privacy";
 
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
 .columns{
     margin-left: 0;
     margin-right: 0; 

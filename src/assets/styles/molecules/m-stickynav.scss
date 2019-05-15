@@ -1,4 +1,12 @@
 .m-stickynav{
+    pointer-events:none;
+    bottom: 2rem;
+    position:absolute;
+    width:100%;
+    z-index: 10000;
+    @include tablet{
+        position:fixed;
+    }
     &__container{
         @extend .container;
     }
@@ -20,12 +28,5 @@
     }
 }
 nav{
-    pointer-events:none;
-    bottom: 2rem;
-    position:absolute;
-    width:100%;
-    z-index: 10000;
-    @include tablet{
-        position:fixed;
-    }
+    
 }

@@ -1,12 +1,12 @@
 .a-heading{
     font-family: 'konnect', Arial, sans-serif;
     font-weight: 700;
-    line-height: 135%;
+    line-height: 130%;
     color: $mb-black;
 }
 .a-heading_first{
     @extend .a-heading;
-    @include fontSize(88);
+    @include fontSize(80);
 }
 
 .a-heading_second{

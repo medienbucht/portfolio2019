@@ -28,8 +28,9 @@
                 }
                 .o-workflow__paragraph{
                     order:1;
-                    
-                    text-align: right;
+                    @media (min-width:400px){
+                        text-align: right;
+                    }
                     .a-seperator{
                         margin-top: 1.5rem;
                         float:right;

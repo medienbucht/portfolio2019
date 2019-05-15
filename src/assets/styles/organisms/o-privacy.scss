@@ -1,0 +1,27 @@
+.o-privacy{
+    display: block;
+
+    ul{
+        padding-left: 3rem;
+        list-style: disc;
+        li{
+            @extend .a-paragraph;
+        }
+    }
+
+    ol{
+        padding-left: 3rem;
+        li{
+            @extend .a-paragraph;
+        }
+    }
+    p{
+        //padding-left: 2rem;
+    }
+    em,h3{
+        display:block;
+        margin-bottom:1rem;
+    }
+    
+}
+

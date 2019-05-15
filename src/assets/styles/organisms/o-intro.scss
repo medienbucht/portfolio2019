@@ -50,6 +50,6 @@
         }
     }
     #typedjs{
-        color: #84C1CF;
+        @include tablet{color: #84C1CF;}
     }
 }

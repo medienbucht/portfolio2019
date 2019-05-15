@@ -1,7 +1,7 @@
 <?php
-$name = htmlpecialchars($_POST['name']);
-$email = htmlpecialchars($_POST['email']);
-$message = htmlpecialchars($_POST['message']);
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
 $formcontent=" From: $name \n  Message: $message";
 $recipient = "henrik@medienbucht.de";
 $subject = "medienbucht.de Kontaktformular";
