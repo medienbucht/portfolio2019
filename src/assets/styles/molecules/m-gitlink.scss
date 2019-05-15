@@ -1,0 +1,57 @@
+.m-gitlink{
+    position: fixed;
+    top:0;
+    left:0;
+    display: none;
+    transform: scale(-1, 1);
+    transition: transform .3s ease;
+    &:hover{
+        transform: scale(-1.2, 1.2);
+    }
+    @include desktop{
+        display: block;
+    }
+    .octo-background{
+        fill: #84C1CF;
+    }
+}
+
+.m-gitlink:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+  
+  @keyframes octocat-wave {
+      0% {
+          transform: rotate(0deg);
+      }
+  
+      20% {
+          transform: rotate(-25deg);
+      }
+  
+      40% {
+          transform: rotate(10deg);
+      }
+  
+      60% {
+          transform: rotate(-25deg);
+      }
+  
+      80% {
+          transform: rotate(10deg);
+      }
+  
+      100% {
+          transform: rotate(0deg);
+      }
+  }
+  
+  @media (max-width: 500px) {
+      .m-gitlink:hover .octo-arm {
+          animation: none;
+      }
+  
+      .m-gitlink .octo-arm {
+          animation: octocat-wave 560ms ease-in-out;
+      }
+  }

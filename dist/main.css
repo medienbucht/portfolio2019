@@ -68,7 +68,7 @@ th {
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg); } }
 
- .button, .a-input[type=submit], .a-input#showPrivacy, .o-privacy #showPrivacy {
+ .button, .a-input[type=submit], .a-input#showPrivacy {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -76,7 +76,7 @@ th {
   user-select: none; }
 
 .input, .a-input[type=text], .a-input[type=email],
-.textarea, .a-input[name=message], .button, .a-input[type=submit], .a-input#showPrivacy, .o-privacy #showPrivacy {
+.textarea, .a-input[name=message], .button, .a-input[type=submit], .a-input#showPrivacy {
   -moz-appearance: none;
   -webkit-appearance: none;
   align-items: center;
@@ -95,11 +95,11 @@ th {
   position: relative;
   vertical-align: top; }
   .input:focus, .a-input:focus[type=text], .a-input:focus[type=email],
-  .textarea:focus, .a-input:focus[name=message], .button:focus, .a-input:focus[type=submit], .a-input#showPrivacy:focus, .o-privacy #showPrivacy:focus, .input:active, .a-input:active[type=text], .a-input:active[type=email],
-  .textarea:active, .a-input:active[name=message], .button:active, .a-input:active[type=submit], .a-input#showPrivacy:active, .o-privacy #showPrivacy:active {
+  .textarea:focus, .a-input:focus[name=message], .button:focus, .a-input:focus[type=submit], .a-input#showPrivacy:focus, .input:active, .a-input:active[type=text], .a-input:active[type=email],
+  .textarea:active, .a-input:active[name=message], .button:active, .a-input:active[type=submit], .a-input#showPrivacy:active {
     outline: none; }
   .input[disabled], .a-input[disabled][type=text], .a-input[disabled][type=email],
-  .textarea[disabled], .a-input[disabled][name=message], .button[disabled], .a-input[disabled][type=submit], .a-input#showPrivacy[disabled], .o-privacy #showPrivacy[disabled] {
+  .textarea[disabled], .a-input[disabled][name=message], .button[disabled], .a-input[disabled][type=submit], .a-input#showPrivacy[disabled] {
     cursor: not-allowed; }
 
  .a-heading_projects, .m-stickynav__content, .m-projectentry, .m-projectentry__descr, .m-projectentry__images, .m-contactform, .m-client, .o-intro .a-heading_first, .o-intro__content, .o-introducing__content, .o-workflow__content, .o-workflow__entry, .o-workflow__heading, .o-workflow__paragraph, .o-contact__logos, .o-footer__content {
@@ -295,7 +295,7 @@ th {
   .label:not(:last-child) {
     margin-bottom: 0.5em; }
 
-.button, .a-input[type=submit], .a-input#showPrivacy, .o-privacy #showPrivacy {
+.button, .a-input[type=submit], .a-input#showPrivacy {
   background-color: white;
   border-color: #dbdbdb;
   border-width: 1px;
@@ -308,32 +308,32 @@ th {
   padding-top: calc(0.375em - 1px);
   text-align: center;
   white-space: nowrap; }
-  .button strong, .a-input[type=submit] strong, .a-input#showPrivacy strong, .o-privacy #showPrivacy strong {
+  .button strong, .a-input[type=submit] strong, .a-input#showPrivacy strong {
     color: inherit; }
-  .button .icon, .a-input[type=submit] .icon, .a-input#showPrivacy .icon, .o-privacy #showPrivacy .icon {
+  .button .icon, .a-input[type=submit] .icon, .a-input#showPrivacy .icon {
     height: 1.5em;
     width: 1.5em; }
-  .button .icon:first-child:not(:last-child), .a-input[type=submit] .icon:first-child:not(:last-child), .a-input#showPrivacy .icon:first-child:not(:last-child), .o-privacy #showPrivacy .icon:first-child:not(:last-child) {
+  .button .icon:first-child:not(:last-child), .a-input[type=submit] .icon:first-child:not(:last-child), .a-input#showPrivacy .icon:first-child:not(:last-child) {
     margin-left: calc(-0.375em - 1px);
     margin-right: 0.1875em; }
-  .button .icon:last-child:not(:first-child), .a-input[type=submit] .icon:last-child:not(:first-child), .a-input#showPrivacy .icon:last-child:not(:first-child), .o-privacy #showPrivacy .icon:last-child:not(:first-child) {
+  .button .icon:last-child:not(:first-child), .a-input[type=submit] .icon:last-child:not(:first-child), .a-input#showPrivacy .icon:last-child:not(:first-child) {
     margin-left: 0.1875em;
     margin-right: calc(-0.375em - 1px); }
-  .button .icon:first-child:last-child, .a-input[type=submit] .icon:first-child:last-child, .a-input#showPrivacy .icon:first-child:last-child, .o-privacy #showPrivacy .icon:first-child:last-child {
+  .button .icon:first-child:last-child, .a-input[type=submit] .icon:first-child:last-child, .a-input#showPrivacy .icon:first-child:last-child {
     margin-left: calc(-0.375em - 1px);
     margin-right: calc(-0.375em - 1px); }
-  .button:hover, .a-input:hover[type=submit], .a-input#showPrivacy:hover, .o-privacy #showPrivacy:hover {
+  .button:hover, .a-input:hover[type=submit], .a-input#showPrivacy:hover {
     border-color: #b5b5b5;
     color: #363636; }
-  .button:focus, .a-input:focus[type=submit], .a-input#showPrivacy:focus, .o-privacy #showPrivacy:focus {
+  .button:focus, .a-input:focus[type=submit], .a-input#showPrivacy:focus {
     border-color: #3273dc;
     color: #363636; }
-    .button:focus:not(:active), .a-input:focus:not(:active)[type=submit], .a-input#showPrivacy:focus:not(:active), .o-privacy #showPrivacy:focus:not(:active) {
+    .button:focus:not(:active), .a-input:focus:not(:active)[type=submit], .a-input#showPrivacy:focus:not(:active) {
       box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
-  .button:active, .a-input:active[type=submit], .a-input#showPrivacy:active, .o-privacy #showPrivacy:active {
+  .button:active, .a-input:active[type=submit], .a-input#showPrivacy:active {
     border-color: #4a4a4a;
     color: #363636; }
-  .button[disabled], .a-input[disabled][type=submit], .a-input#showPrivacy[disabled], .o-privacy #showPrivacy[disabled] {
+  .button[disabled], .a-input[disabled][type=submit], .a-input#showPrivacy[disabled] {
     background-color: white;
     border-color: #dbdbdb;
     box-shadow: none;
@@ -812,12 +812,6 @@ em.a-paragraph {
   .o-privacy em, .o-privacy h3 {
     display: block;
     margin-bottom: 1rem; }
-  .o-privacy #showPrivacy {
-    background: #FF6663;
-    border: 0 solid transparent;
-    font-family: "Konnect", Arial, Helvetica, sans-serif;
-    color: #fff;
-    border-radius: 0; }
 
 * {
   -webkit-font-smoothing: antialiased;

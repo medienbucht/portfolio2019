@@ -44,6 +44,7 @@ $tablet: 768px;
 @import "molecules/m-partners";
 @import "molecules/m-client";
 @import "molecules/m-taglist";
+@import "molecules/m-gitlink";
 
 //organisms
 @import "organisms/o-intro";
@@ -58,7 +59,7 @@ $tablet: 768px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
 .columns{
     margin-left: 0;
     margin-right: 0; 
