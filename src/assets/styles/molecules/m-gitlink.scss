@@ -1,20 +1,27 @@
 .m-gitlink{
     position: fixed;
-    top:0;
-    left:0;
+    top:-50px;
+    left:-50px;
     display: none;
     transform: scale(-1, 1);
-    transition: transform .3s ease;
-    &:hover{
-        transform: scale(-1.2, 1.2);
-    }
+    opacity: 0;
+    transition: transform .3s ease, top .3s ease-out, left .3s ease-out, opacity 1s ease;
     @include desktop{
         display: block;
+    }
+
+    &:hover{
+        transform: scale(-1.2, 1.2);
     }
     .octo-background{
         fill: #84C1CF;
     }
-}
+    &.visible{
+            top:0;
+            left:0;
+            opacity: 1;
+        }
+    }
 
 .m-gitlink:hover .octo-arm {
     animation: octocat-wave 560ms ease-in-out;

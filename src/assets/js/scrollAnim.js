@@ -1,10 +1,11 @@
 //Scroll Anim
-export default function attachClassOnScroll(element, className) {
+export default function attachClassOnScroll(element, target, className) {
     const elem = document.querySelector(element);
+    const trg= document.querySelector(target);
 
     window.addEventListener('scroll', function () {
         if (isScrolledIntoView(elem)) {
-            elem.classList.add(className);
+            trg.classList.add(className);
             console.log('scrolled by')
         }
         else {

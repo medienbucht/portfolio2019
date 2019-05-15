@@ -403,9 +403,6 @@ em.a-paragraph {
   font-size: 24px;
   font-size: 1.5rem; }
 
-.anim {
-  color: red; }
-
 .a-link {
   font-family: 'konnect', Arial, sans-serif;
   line-height: 160%;
@@ -630,6 +627,77 @@ em.a-paragraph {
   flex-wrap: wrap;
   justify-content: center; }
 
+.m-gitlink {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease; }
+  .m-gitlink:hover {
+    -webkit-transform: scale(-1.2, 1.2);
+            transform: scale(-1.2, 1.2); }
+  .m-gitlink .octo-background {
+    fill: #84C1CF; }
+  @media screen and (min-width: 1088px) {
+    .m-gitlink.visible {
+      display: block; } }
+
+.m-gitlink:hover .octo-arm {
+  -webkit-animation: octocat-wave 560ms ease-in-out;
+          animation: octocat-wave 560ms ease-in-out; }
+
+@-webkit-keyframes octocat-wave {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  20% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg); }
+  40% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  60% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg); }
+  80% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes octocat-wave {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  20% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg); }
+  40% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  60% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg); }
+  80% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@media (max-width: 500px) {
+  .m-gitlink:hover .octo-arm {
+    -webkit-animation: none;
+            animation: none; }
+  .m-gitlink .octo-arm {
+    -webkit-animation: octocat-wave 560ms ease-in-out;
+            animation: octocat-wave 560ms ease-in-out; } }
+
 .o-intro {
   height: 100vh;
   margin-bottom: 4rem; }
@@ -761,10 +829,6 @@ em.a-paragraph {
             transform: skewY(6deg); }
   .o-projects__content {
     flex-wrap: wrap; }
-  .o-projects #particles-js {
-    display: block; }
-  .o-projects .particles {
-    position: absolute; }
 
 @media screen and (max-width: 767px) {
   .o-contact__logos {
