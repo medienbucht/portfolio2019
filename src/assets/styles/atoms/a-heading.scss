@@ -12,9 +12,11 @@
 .a-heading_second{
     @extend .a-heading;
     @include fontSize(32);
+    
     @include tablet{
         @include fontSize(48);
     }
+
 }
 
 .a-heading_projects{

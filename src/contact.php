@@ -6,10 +6,10 @@ $pos1 = strpos($message, 'href');
 $pos2 = strpos($message, 'porn');
 $pos3 = strpos($message, 'casino');
 $spam = "";
-if($pos1 === true | $pos2 === true |$pos3 === true){
+if($pos1 >=0 | $pos2 >=0 |$pos3 >=0){
     $spam = "SPAM: ";
 }
-$formcontent=" From: $name \n  Message: $message";
+$formcontent="$spam From: $name \n  Message: $message";
 $recipient = "henrik@medienbucht.de";
 $subject = $spam."medienbucht.de Kontaktformular";
 $mailheader = "From: $email \r\n";
