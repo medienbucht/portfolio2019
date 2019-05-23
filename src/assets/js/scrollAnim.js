@@ -1,33 +1,40 @@
 //Scroll Anim
 export default function attachClassOnScroll(element, target, className) {
-    const elem = document.querySelector(element);
-    const trg= document.querySelector(target);
+    document.addEventListener('DOMContentLoaded', () => {
+        const elem = document.querySelector(element);
+        const trg = document.querySelector(target);
 
-    window.addEventListener('scroll', function () {
-        if (isScrolledIntoView(elem)) {
-            trg.classList.add(className);
-            console.log('scrolled by')
-        }
-        else {
-            //remove class name on scroll by
-            //elem.classList.remove(className);
-        }
+        window.addEventListener('scroll', () => {
+            if (isScrolledIntoView(elem)) {
+                trg.classList.add(className);
+                elem.dataset.scrolledBy = true;
+            }
+            else {
+                //remove class name on scroll by
+                //elem.classList.remove(className);
+            }
+        })
     })
+
 }
 
 
 function isScrolledIntoView(el) {
-    var rect = el.getBoundingClientRect();
-    var elemTop = rect.top;
-    var elemBottom = rect.bottom;
+    const scroll = window.scrollY || window.pageYOffset
+    const boundsTop = el.getBoundingClientRect().top + scroll
 
-    // Only completely visible elements return true:
-    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    const viewport = {
+        top: scroll,
+        bottom: scroll + window.innerHeight,
+    }
 
-    // Partially visible elements return true:
-    //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    const bounds = {
+        top: boundsTop,
+        bottom: boundsTop + el.clientHeight,
+    }
 
-    return isVisible;
+    return (bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom)
+        || (bounds.top <= viewport.bottom && bounds.top >= viewport.top);
 }
 
 

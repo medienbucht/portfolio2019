@@ -629,22 +629,27 @@ em.a-paragraph {
 
 .m-gitlink {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: -50px;
+  left: -50px;
   display: none;
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
-  transition: -webkit-transform .3s ease;
-  transition: transform .3s ease;
-  transition: transform .3s ease, -webkit-transform .3s ease; }
+  opacity: 0;
+  transition: top .3s ease-out, left .3s ease-out, opacity .3s ease, -webkit-transform .3s ease;
+  transition: transform .3s ease, top .3s ease-out, left .3s ease-out, opacity .3s ease;
+  transition: transform .3s ease, top .3s ease-out, left .3s ease-out, opacity .3s ease, -webkit-transform .3s ease; }
+  @media screen and (min-width: 1088px) {
+    .m-gitlink {
+      display: block; } }
   .m-gitlink:hover {
     -webkit-transform: scale(-1.2, 1.2);
             transform: scale(-1.2, 1.2); }
   .m-gitlink .octo-background {
     fill: #84C1CF; }
-  @media screen and (min-width: 1088px) {
-    .m-gitlink.visible {
-      display: block; } }
+  .m-gitlink.visible {
+    top: 0;
+    left: 0;
+    opacity: 1; }
 
 .m-gitlink:hover .octo-arm {
   -webkit-animation: octocat-wave 560ms ease-in-out;
