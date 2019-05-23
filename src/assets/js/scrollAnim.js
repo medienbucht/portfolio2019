@@ -10,6 +10,7 @@ export default function attachClassOnScroll(element, target, className) {
                 elem.dataset.scrolledBy = true;
             }
             else {
+                trg.classList.remove(className);
                 //remove class name on scroll by
                 //elem.classList.remove(className);
             }
